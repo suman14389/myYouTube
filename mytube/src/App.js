@@ -1,9 +1,31 @@
+import Header from "./components/Header";
+import Leftbar from "./components/Leftbar";
+import Body from "./components/Body";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="text-2xl bg-green-300">
-      Hello Wor
+
+
+  const AppLayout = () => {
+    return (
+      <div>
+      <Header />
+      <div className="flex w-full m-0">
+        <Leftbar/>
+        <Body/>
+      </div>
     </div>
+    )
+  }
+
+  const Router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout/>,
+    }
+  ])
+  return (
+    <RouterProvider router={Router}/>
   );
 }
 
