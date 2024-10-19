@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 const Leftbar = () => {
   const isLeftBarOpen = useSelector((store) => store.menu.isMenuOpen);
   return (
-    <div className={`flex flex-col gap-2 shadow-lg h-screen ${isLeftBarOpen ? 'overflow-y-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent w-60' : ''}`}>
+    <div className={`flex fixed z-50 bg-white top-16 left-0 flex-col gap-2 shadow-lg h-screen ${isLeftBarOpen ? 'overflow-y-scroll scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent w-60' : ''}`}>
         {
             leftBarConfigList.map((item) => {
                 return (
