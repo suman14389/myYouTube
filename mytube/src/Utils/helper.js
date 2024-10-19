@@ -1,3 +1,6 @@
+import { YOUTUBE_GET_VIDEO_BY_ID } from "./constants";
+import { YOUTUBE_API_KEY } from "./secrets";
+
 export const getVideoViewCount = (viewCount) => {
     if(viewCount > 1000000) {
         return (viewCount/1000000).toFixed(1) + 'M';
@@ -14,4 +17,8 @@ export const getVideoTruncatedTitle = (title, maxLength) => {
     } else {
         return title;
     }
+}
+
+export const getYouTubeVideoByIdUrl = (id) => {
+    return YOUTUBE_GET_VIDEO_BY_ID + id + "&key=" + YOUTUBE_API_KEY;
 }
