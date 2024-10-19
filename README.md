@@ -43,4 +43,10 @@ What I built :
  - created some configs to display side bar items and filter buttons
  
 
+Nested comments feature 
 
+ - created a watch page with video player with channel and autoplay with subscribe button
+ - used embed youtube link to play the video
+ - added comments container
+ - rendered the nested comments with collapse and expanding the nested comments
+ 
