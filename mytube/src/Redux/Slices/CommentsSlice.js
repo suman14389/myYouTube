@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { commentsConfigList } from "../../configs/commentsConfigList";
-import { addNestedComment } from "../../Utils/helper";
+import { addNestedComment, getRandomNames } from "../../Utils/helper";
 
 const commentsSlice = createSlice({
     name: "comments",
@@ -14,7 +14,7 @@ const commentsSlice = createSlice({
         addReply: (state, action) => {
             const [nestedString, replyText] = action.payload;
             const replyComment = {
-                name: "malavika",
+                name: getRandomNames(),
                 comment: replyText,
                 replies: []
             }

@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { M_ICON } from '../Utils/iconUrls'
 import { useDispatch } from 'react-redux';
 import { addReply } from '../Redux/Slices/CommentsSlice';
+import { getRandomColor } from '../Utils/helper';
 
 const Comment = ({comment, isReplyComment, identifier}) => {
     const dispatch = useDispatch();
@@ -9,8 +10,10 @@ const Comment = ({comment, isReplyComment, identifier}) => {
     const [isNestedCommentsCollapsed, setIsNestedCommentsCollapsed] = useState(true);
     const [isReplyingComment, setIsReplyingComment] = useState(false);
     const [replyText, setReplyText] = useState("");
+    const color = useRef(getRandomColor());
 
     console.log(identifier);
+    console.log(getRandomColor());
 
     const handleReplySubmit = (e) => {
         if (e.key === 'Enter') {
@@ -23,7 +26,7 @@ const Comment = ({comment, isReplyComment, identifier}) => {
     return (
         <div className='mb-4'>
             <div className='flex items-center gap-2'>
-                <img src={M_ICON} className={`rounded-full ${isReplyComment ? 'w-6 h-6' : 'w-8 h-8'}`} />
+                <span className={`w-6 h-6 rounded-full flex items-center justify-center ${isReplyComment ? 'w-6 h-6' : 'w-8 h-8'}`} style={{backgroundColor: color.current}}>{comment.name[0]}</span>
                 <div className='flex flex-col'>
                     <p className='font-bold text-[12px]'>{comment.name}</p>
                     <p className='text-[14px]'>{comment.comment}</p>

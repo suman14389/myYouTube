@@ -5,6 +5,7 @@ import CommentsRenderer from './CommentsRenderer';
 import { useSelector } from 'react-redux';
 import { addComment } from '../Redux/Slices/CommentsSlice';
 import { useDispatch } from 'react-redux';
+import { getRandomNames } from '../Utils/helper';
 
 const CommentsContainer = () => {
 
@@ -16,7 +17,7 @@ const CommentsContainer = () => {
 
   const handleCommentSubmit = () => {
     dispatch(addComment({
-      name: "Suman",
+      name: getRandomNames(),
       comment: commentText,
       replies: []
     }));

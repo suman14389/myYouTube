@@ -1,24 +1,26 @@
+import { getRandomNames } from "../Utils/helper";
+
 export const commentsConfigList = [
     {
-        name: 'John Doe',
+        name:  getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: [
             {
-                name: 'John Doe',
+                name: getRandomNames(), 
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: [
                     {
                        
-                        name: 'John Doe',
+                        name: getRandomNames(),
                         comment: 'This is a reply',
                         date: '2021-01-01',
                         replies: []
                     },
                     {
                        
-                        name: 'John Doe',
+                        name: getRandomNames(),
                         comment: 'This is a reply',
                         date: '2021-01-01',
                         replies: []
@@ -35,32 +37,32 @@ export const commentsConfigList = [
         replies: [
             {
                 
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: [{
                     
-                    name: 'John Doe',
+                    name: getRandomNames(),
                     comment: 'This is a reply',
                     date: '2021-01-01',
                     replies: [
                         {
-                            name: 'John Doe',
+                            name: getRandomNames(),
                             comment: 'This is a reply',
                             date: '2021-01-01',
                             replies: [
                                 {
-                                    name: 'John Doe',
+                                    name: getRandomNames(),
                                     comment: 'This is a reply',
                                     date: '2021-01-01',
                                     replies: [
                                         {
-                                            name: 'John Doe',
+                                            name: getRandomNames(),
                                             comment: 'This is a reply',
                                             date: '2021-01-01',
                                             replies: [
                                                 {
-                                                    name: 'John Doe',
+                                                    name: getRandomNames(),
                                                     comment: 'This is a reply',
                                                     date: '2021-01-01',
                                                     replies: []
@@ -69,7 +71,7 @@ export const commentsConfigList = [
                                         },
                                         {
                        
-                                            name: 'John Doe',
+                                            name: getRandomNames(),
                                             comment: 'This is a reply',
                                             date: '2021-01-01',
                                             replies: []
@@ -83,7 +85,7 @@ export const commentsConfigList = [
             },
             {
                        
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
@@ -91,25 +93,25 @@ export const commentsConfigList = [
         ]
     },
     {
-        name: 'John Doe',
+        name: getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: []
     },
     {
-        name: 'John Doe',
+        name: getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: [
             {
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
             },
             {
                        
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
@@ -117,27 +119,27 @@ export const commentsConfigList = [
         ]
     },
     {
-        name: 'John Doe',
+        name: getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: [
             {
                        
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
             },
             {
                        
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
             },
             {
                        
-                name: 'John Doe',
+                name: getRandomNames(),
                 comment: 'This is a reply',
                 date: '2021-01-01',
                 replies: []
@@ -145,13 +147,13 @@ export const commentsConfigList = [
         ]
     },
     {
-        name: 'John Doe',
+        name: getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: []
     },
     {
-        name: 'John Doe',
+        name: getRandomNames(),
         comment: 'This is a comment',
         date: '2021-01-01',
         replies: []

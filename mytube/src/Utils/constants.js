@@ -10,3 +10,6 @@ export const YOUTUBE_GET_VIDEO_BY_ID="https://youtube.googleapis.com/youtube/v3/
 
 export const YOUTUBE_SEARCH_API_URL = "http://suggestqueries.google.com/complete/search?client=firefox&q="
 
+export const randomNames = ["Suman", "Malavika", "Harsha", "Rahul", "Shiva", "Amaresh", "Karthik", "Ruchitha", "Sanjana", "Vaibhavi", "Prem", "Sneha", "Prem", "Sujatha", "Mamatha", "Krishna", "Divya", "Gangu", "Balli", "Chitu", "Ved", "Lakshmi", "Sai", "Mithu", "Vijaya", "Ramesh"]
+
+export const randomcolors = ["orange"]

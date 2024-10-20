@@ -1,4 +1,4 @@
-import { YOUTUBE_GET_VIDEO_BY_ID } from "./constants";
+import { randomNames, YOUTUBE_GET_VIDEO_BY_ID, randomcolors } from "./constants";
 import { YOUTUBE_API_KEY } from "./secrets";
 
 export const getVideoViewCount = (viewCount) => {
@@ -31,3 +31,10 @@ export const addNestedComment = (object, levelsArray, newValue, i=0) => {
     }
 }
 
+export const getRandomNames = () => {
+    return randomNames[Math.floor(Math.random() * randomNames.length)];
+}
+
+export const getRandomColor = () => {
+    return randomcolors[Math.floor(Math.random() * randomcolors.length)];
+}
