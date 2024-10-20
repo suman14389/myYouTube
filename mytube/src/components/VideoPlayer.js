@@ -17,7 +17,7 @@ const VideoPlayer = ({id}) => {
   return (
     <>
         <iframe 
-            className='w-full h-[500px] rounded-lg shadow-lg border-2 border-black'
+            className='w-full h-[500px] rounded-lg shadow-xl border-black'
             src={"https://www.youtube.com/embed/" + id + "?autoplay=1&si=0vmqeW_cPK75mlXW"}
             title="YouTube video player"
             allow="autoplay"
