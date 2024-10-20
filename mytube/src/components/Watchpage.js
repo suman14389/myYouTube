@@ -8,7 +8,7 @@ const Watchpage = () => {
   const [params] = useSearchParams();
   const videoId = params.get("v");
   return (
-    <div className='pt-20 pl-24 w-full overflow-y-scroll flex'>
+    <div className='pt-20 pl-4 w-full overflow-y-scroll flex'>
         <div className='flex flex-col w-[70%]'>
             <VideoPlayer id={videoId} />
             <div>

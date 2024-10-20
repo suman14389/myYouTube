@@ -22,3 +22,12 @@ export const getVideoTruncatedTitle = (title, maxLength) => {
 export const getYouTubeVideoByIdUrl = (id) => {
     return YOUTUBE_GET_VIDEO_BY_ID + id + "&key=" + YOUTUBE_API_KEY;
 }
+
+export const addNestedComment = (object, levelsArray, newValue, i=0) => {
+    if(i===levelsArray.length-1){
+        object[levelsArray[i]].replies.unshift(newValue);
+    } else {
+        addNestedComment(object[levelsArray[i]].replies, levelsArray, newValue, i+1);
+    }
+}
+

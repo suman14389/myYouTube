@@ -17,18 +17,17 @@ const VideoPlayer = ({id}) => {
   return (
     <>
         <iframe 
-            className='w-full h-[500px] rounded-lg shadow-lg'
+            className='w-full h-[500px] rounded-lg shadow-lg border-2 border-black'
             src={"https://www.youtube.com/embed/" + id + "?autoplay=1&si=0vmqeW_cPK75mlXW"}
             title="YouTube video player"
             allow="autoplay"
-            allowFullScreen
             allowfullscreen="allowfullscreen"
         >
         </iframe>
         {
             videoData && (
                 <div className='mt-2'>
-                    <h1 className='font-bold text-2xl'>{videoData.snippet.title}</h1>
+                    <h1 className='font-bold text-xl'>{videoData.snippet.title}</h1>
                     <div className='flex items-center gap-2'>
                         <img src={USER_ICON_URL} alt="user" className='w-16 h-16 rounded-full'/>
                         <div className='flex flex-col text-sm text-gray-700'>
