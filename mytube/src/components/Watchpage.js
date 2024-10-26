@@ -15,9 +15,7 @@ const Watchpage = () => {
                 <CommentsContainer />
             </div>
         </div>
-        <div>
-            <LiveChat />
-        </div>
+        <LiveChat />
     </div>
   )
 }

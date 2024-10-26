@@ -162,4 +162,3 @@ import { getRandomNames } from "../Utils/helper";
 // ]
 
 export const commentsConfigList= [];
-
