@@ -12,6 +12,6 @@ export const YOUTUBE_SEARCH_API_URL = "http://suggestqueries.google.com/complete
 
 export const randomNames = ["Suman", "Malavika", "Harsha", "Rahul", "Shiva", "Amaresh", "Karthik", "Ruchitha", "Sanjana", "Vaibhavi", "Prem", "Sneha", "Prem", "Sujatha", "Mamatha", "Krishna", "Divya", "Gangu", "Balli", "Chitu", "Ved", "Lakshmi", "Sai", "Mithu", "Vijaya", "Ramesh"]
 
-export const randomcolors = ["orange", "indianred", "lightblue", "green", "pink", "yellow", "brown", "gray"]
+export const randomcolors = ["orange", "indianred", "lightblue", "green", "pink", "yellow", "brown", "gray", "cream", "gold", "silver"]
 
 export const LIVE_CHAT_COUNT = 100;

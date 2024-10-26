@@ -10,7 +10,7 @@ const LiveChat = () => {
   const getDefaultItem = (name, message) => {
     return {
         name: name ||getRandomNames(),
-        message: message || getRandomText(30),
+        message: message || getRandomText(20),
         color: getRandomColor()
       }
     
@@ -39,7 +39,7 @@ const LiveChat = () => {
   }
 
   return (
-    <div className='mx-12 w-[25%] rounded-lg p-4 py-2 h-[625px]'>
+    <div className='mx-4 w-[28%] rounded-lg p-4 py-0 h-[625px]'>
       <h1 className='text-2xl font-bold text-center'>Live Chat</h1>
       <div className='border border-black w-full rounded-lg p-4 overflow-y-scroll h-[620px] flex flex-col-reverse'>
         {
